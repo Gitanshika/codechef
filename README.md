@@ -53,7 +53,7 @@ This repository is continuously updated as I solve more CodeChef problems.
 ## 🔗 Connect
 
 - GitHub: [Gitanshika](https://github.com/Gitanshika)
-- CodeChef: [My CodeChef Profile](https://www.codechef.com/users/YOUR_USERNAME)
+- CodeChef: [My CodeChef Profile](https://www.codechef.com/users/Glbitm_119)
 
 ---
 
