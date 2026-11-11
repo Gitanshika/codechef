@@ -1,0 +1,8 @@
+// Problem: CHASE7
+// Platform: codechef
+// Language: ​​
+// Verdict: Accepted
+// URL: https://www.codechef.com/START264D/problems/CHASE7
+// Solved on: 2026-11-11T15:39:39.381Z
+
+# cook your dish here
