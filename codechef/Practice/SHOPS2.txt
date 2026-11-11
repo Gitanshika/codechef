@@ -1,0 +1,8 @@
+// Problem: SHOPS2
+// Platform: codechef
+// Language: ​​
+// Verdict: Accepted
+// URL: https://www.codechef.com/START264D/problems/SHOPS2
+// Solved on: 2026-11-11T15:42:21.462Z
+
+# cook your dish here
