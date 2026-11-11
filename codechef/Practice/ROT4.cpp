@@ -3,16 +3,6 @@
 // Language: C++​
 // Verdict: Accepted
 // URL: https://www.codechef.com/START264D/problems/ROT4
-// Solved on: 2026-11-11T15:45:04.880Z
+// Solved on: 2026-11-11T15:48:04.676Z
 
-5
-4
-1080
-3
-444
-3
-222
-4
-4804
-5
-10001
+// source not captured automatically - open the solution page and copy it manually
