@@ -3,7 +3,7 @@
 // Language: C++​
 // Verdict: Accepted
 // URL: https://www.codechef.com/practice/course/dynamic-programming/INTDP01/problems/SUBINC?tab=statement
-// Solved on: 2026-11-13T06:19:55.863Z
+// Solved on: 2026-11-13T06:20:54.949Z
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -15,9 +15,9 @@ int main() {
     while(t--){
         int n;
         cin>>n;
-        int ans=1;
+        long long  ans=1;
         vector<int>arr(n);
-        vector<int>dp(n+1,1);
+        vector<long long>dp(n+1,1);
         for(int i=0;i<n;i++){
             cin>>arr[i];
         }
