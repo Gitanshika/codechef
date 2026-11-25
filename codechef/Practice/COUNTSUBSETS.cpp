@@ -3,7 +3,7 @@
 // Language: C++​
 // Verdict: Accepted
 // URL: https://www.codechef.com/practice/course/dynamic-programming/INTDP02/problems/COUNTSUBSETS
-// Solved on: 2026-11-25T18:42:41.806Z
+// Solved on: 2026-11-25T18:46:47.807Z
 
 
 class Solution {
@@ -19,10 +19,9 @@ public:
 
         int skip = issubarr(idx+1, target, arr, dp);
 
-        int take = 0;
-        if(target >= arr[idx]) {
-            take = issubarr(idx+1, target-arr[idx], arr, dp);
-        }
+        if(target < arr[idx]) return dp[idx][target]=skip;
+         int   take = issubarr(idx+1, target-arr[idx], arr, dp);
+        
 
         return dp[idx][target] = (skip + take) % mod;
     }
