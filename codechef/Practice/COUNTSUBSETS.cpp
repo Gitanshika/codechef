@@ -3,15 +3,15 @@
 // Language: C++​
 // Verdict: Accepted
 // URL: https://www.codechef.com/practice/course/dynamic-programming/INTDP02/problems/COUNTSUBSETS
-// Solved on: 2026-11-25T18:37:15.627Z
+// Solved on: 2026-11-25T18:40:15.157Z
 
 class Solution {
 public:
     int issubarr(int idx,int target,vector<int>&arr,vector<vector<int>>&dp){
 
-        if(target==0) return 1;
-
-        if(idx==arr.size()) return 0;
+        if(idx==arr.size()){
+            return target==0;
+        }
 
         if(dp[idx][target]!=-1) return dp[idx][target];
 
