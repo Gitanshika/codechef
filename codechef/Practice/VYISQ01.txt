@@ -1,0 +1,8 @@
+// Problem: VYISQ01
+// Platform: codechef
+// Language: ​​
+// Verdict: Accepted
+// URL: https://www.codechef.com/practice/course/dynamic-programming/INTDP02/problems/VYISQ01
+// Solved on: 2026-11-25T18:08:29.288Z
+
+# cook your dish here
