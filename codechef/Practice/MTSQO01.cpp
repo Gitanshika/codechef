@@ -2,8 +2,8 @@
 // Platform: codechef
 // Language: C++​
 // Verdict: Accepted
-// URL: https://www.codechef.com/practice/course/dynamic-programming/INTDP01/problems/MTSQO01?tab=statement
-// Solved on: 2026-11-13T06:44:06.603Z
+// URL: https://www.codechef.com/practice/course/dynamic-programming/INTDP01/problems/MTSQO01
+// Solved on: 2026-11-25T11:54:37.931Z
 
 class Solution {
 public:
@@ -16,7 +16,6 @@ public:
     }
     int calculateMaxRobAmount(const vector<int>& houseMoneyList) {
         int n=houseMoneyList.size();
-        if(n == 0) return 0;
 if(n == 1) return houseMoneyList[0];
         vector<int>dp1(n,-1);
         vector<int>dp2(n,-1);
