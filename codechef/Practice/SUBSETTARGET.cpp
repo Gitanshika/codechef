@@ -3,21 +3,21 @@
 // Language: C++​
 // Verdict: Accepted
 // URL: https://www.codechef.com/practice/course/dynamic-programming/INTDP02/problems/SUBSETTARGET
-// Solved on: 2026-11-25T18:07:40.883Z
+// Solved on: 2026-11-25T18:44:37.402Z
 
 class Solution {
 public:
     bool issubarr(int idx,int target,vector<int>&arr,vector<vector<int>>&dp){
-        if(idx==arr.size()){
-            if(target==0){
+        if(target==0){
                 return true;
                 
             }
-            else{
-                return false;
+        if(idx==arr.size()){
+            
+                            return false;
             }
             
-        }
+        
         if(dp[idx][target]!=-1) return dp[idx][target];
         bool skip=issubarr(idx+1,target,arr,dp);
         if(target<arr[idx]) return dp[idx][target] =skip;
