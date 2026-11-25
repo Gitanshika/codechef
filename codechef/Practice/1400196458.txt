@@ -1,0 +1,8 @@
+// Problem: Sums in a Triangle
+// Platform: codechef
+// Language: unknown
+// Verdict: Accepted
+// URL: https://www.codechef.com/viewsolution/1400196458
+// Solved on: 2026-11-25T17:38:47.584Z
+
+// source not captured automatically - open the solution page and copy it manually
