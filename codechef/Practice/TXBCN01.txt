@@ -1,0 +1,8 @@
+// Problem: TXBCN01
+// Platform: codechef
+// Language: ​​
+// Verdict: Accepted
+// URL: https://www.codechef.com/practice/course/dynamic-programming/INTDP02/problems/TXBCN01
+// Solved on: 2026-11-25T17:14:10.839Z
+
+# cook your dish here
