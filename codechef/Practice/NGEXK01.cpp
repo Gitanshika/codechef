@@ -3,35 +3,32 @@
 // Language: C++​
 // Verdict: Accepted
 // URL: https://www.codechef.com/practice/course/dynamic-programming/INTDP02/problems/NGEXK01
-// Solved on: 2026-11-26T07:13:59.439Z
+// Solved on: 2026-11-26T07:15:33.994Z
 
-int lcs(int i, int j, string &s1, string &s2,
-        vector<vector<int>>& dp) {
-
-    if(i == s1.size() || j == s2.size()) return 0;
-
-    if(dp[i][j] != -1) return dp[i][j];
-
-    if(s1[i] == s2[j]) {
-        return dp[i][j] = 1 + lcs(i+1, j+1, s1, s2, dp);
-    }
-
-    return dp[i][j] = max(
-        lcs(i+1, j, s1, s2, dp),
-        lcs(i, j+1, s1, s2, dp)
-    );
-}
-
-long long calculateMinInsertions(string inputText) {
+int calculateMinInsertions(string inputText) {
+    int n = inputText.size();
 
     string rev = inputText;
     reverse(rev.begin(), rev.end());
 
-    int n = inputText.size();
+    vector<int> dp(n+1, 0);
 
-    vector<vector<int>> dp(n, vector<int>(n, -1));
+    for(int i = 1; i <= n; i++) {
+        int prev = 0;
 
-    int lps = lcs(0, 0, inputText, rev, dp);
+        for(int j = 1; j <= n; j++) {
+            int temp = dp[j];
 
-    return n - lps;
+            if(inputText[i-1] == rev[j-1]) {
+                dp[j] = 1 + prev;
+            }
+            else {
+                dp[j] = max(dp[j], dp[j-1]);
+            }
+
+            prev = temp;
+        }
+    }
+
+    return n - dp[n];
 }
