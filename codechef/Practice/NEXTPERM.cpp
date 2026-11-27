@@ -2,8 +2,8 @@
 // Platform: codechef
 // Language: C++​
 // Verdict: Accepted
-// URL: https://www.codechef.com/practice/course/arrays/ARRAYSPRO/problems/NEXTPERM?tab=statement
-// Solved on: 2026-11-27T12:01:02.812Z
+// URL: https://www.codechef.com/practice/course/arrays/ARRAYSPRO/problems/NEXTPERM
+// Solved on: 2026-11-27T14:30:56.797Z
 
 #include <bits/stdc++.h>
 using namespace std;
