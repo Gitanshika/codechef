@@ -3,7 +3,7 @@
 // Language: C++​
 // Verdict: Accepted
 // URL: https://www.codechef.com/practice/course/arrays/ARRAYSPRO/problems/SPIRALMATRIX
-// Solved on: 2026-11-27T17:58:54.173Z
+// Solved on: 2026-11-27T18:11:07.477Z
 
 class Solution {
 public:
@@ -26,18 +26,18 @@ public:
     
        }
        right--;
-       //if(top<=bottom){
+      if(top<=bottom){
            for(int k=right;k>=left;k--){
                ans.push_back(matrix[bottom][k]);
            }
            bottom--;
-      // }
-       //if(left<=right){
+      }
+       if(left<=right){
           for(int j=bottom;j>=top;j--){
                ans.push_back(matrix[j][left]);
            }
           left++;
-       //}
+       }
        
        }
         return ans;
