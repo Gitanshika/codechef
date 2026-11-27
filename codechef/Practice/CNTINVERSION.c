@@ -44,13 +44,13 @@ long long countInversion(vector<int>& arr, int n) {
 }
 // Verdict: Accepted
 // URL: https://www.codechef.com/practice/course/arrays/ARRAYSPRO/problems/CNTINVERSION
-// Solved on: 2026-11-27T09:55:50.990Z
+// Solved on: 2026-11-27T09:58:52.717Z
 
-int mergearr(vector<int>&arr,int st,int mid,int end){
+long long mergearr(vector<int>&arr,int st,int mid,int end){
     vector<int>temp;
     int i=st;
     int j=mid+1;
-    int vc=0;
+    long long vc=0;
     while(i<=mid && j<=end){
         if(arr[i]<arr[j]){
             temp.push_back(arr[i]);
@@ -76,12 +76,12 @@ int mergearr(vector<int>&arr,int st,int mid,int end){
     
     return vc;
 }
-int mergesort(vector<int>&arr,int st,int end){
+long long mergesort(vector<int>&arr,int st,int end){
     if(st<end){
         int mid=st+(end-st)/2;
-        int ilc=mergesort(arr,st,mid);
-        int rlc=mergesort(arr,mid+1,end);
-        int vc= mergearr(arr,st,mid,end);
+        long long ilc=mergesort(arr,st,mid);
+        long long rlc=mergesort(arr,mid+1,end);
+        long long vc= mergearr(arr,st,mid,end);
         return ilc+rlc+vc;
       
     }
@@ -89,7 +89,7 @@ int mergesort(vector<int>&arr,int st,int end){
 }
 
 long long countInversion(vector<int>& arr, int n) {
-    int ans=mergesort(arr,0,n-1);
+    long long ans=mergesort(arr,0,n-1);
     return ans;
     
 }
