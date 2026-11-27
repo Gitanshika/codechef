@@ -3,7 +3,7 @@
 // Language: C++​
 // Verdict: Accepted
 // URL: https://www.codechef.com/practice/course/arrays/ARRAYSPRO/problems/LEADERINARAY
-// Solved on: 2026-11-27T10:13:21.462Z
+// Solved on: 2026-11-27T10:14:02.474Z
 
 class Solution {
 public:
@@ -13,7 +13,7 @@ public:
         for(int i=0;i<nums.size();i++){
              int c=0;
             for(int j=i+1;j<nums.size();j++){
-                if(nums[i]<nums[j]){
+                if(nums[i]<=nums[j]){
                     c=-1;
                 }
             }
