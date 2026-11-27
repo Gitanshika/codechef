@@ -44,7 +44,7 @@ long long countInversion(vector<int>& arr, int n) {
 }
 // Verdict: Accepted
 // URL: https://www.codechef.com/practice/course/arrays/ARRAYSPRO/problems/CNTINVERSION
-// Solved on: 2026-11-27T09:58:52.717Z
+// Solved on: 2026-11-27T10:01:05.996Z
 
 long long mergearr(vector<int>&arr,int st,int mid,int end){
     vector<int>temp;
@@ -56,7 +56,7 @@ long long mergearr(vector<int>&arr,int st,int mid,int end){
             temp.push_back(arr[i]);
             i++;
         }
-        if(arr[i]>arr[j]){
+        else{
             temp.push_back(arr[j]);
             vc+=mid-i+1;
             j++;
