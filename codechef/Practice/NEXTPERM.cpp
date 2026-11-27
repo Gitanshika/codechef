@@ -1,9 +1,9 @@
-// Problem: NEXTPERM
+// Problem: Explained Solutions
 // Platform: codechef
 // Language: C++​
 // Verdict: Accepted
-// URL: https://www.codechef.com/practice/course/arrays/ARRAYSPRO/problems/NEXTPERM
-// Solved on: 2026-11-27T14:30:56.797Z
+// URL: https://www.codechef.com/practice/course/arrays/ARRAYSPRO/problems/NEXTPERM?tab=Submissions
+// Solved on: 2026-11-27T14:44:13.592Z
 
 #include <bits/stdc++.h>
 using namespace std;
