@@ -1,0 +1,8 @@
+// Problem: Next Permutation
+// Platform: codechef
+// Language: unknown
+// Verdict: Accepted
+// URL: https://www.codechef.com/viewsolution/1401332096
+// Solved on: 2026-11-27T14:42:13.143Z
+
+// source not captured automatically - open the solution page and copy it manually
