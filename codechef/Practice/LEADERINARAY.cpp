@@ -3,7 +3,7 @@
 // Language: C++​
 // Verdict: Accepted
 // URL: https://www.codechef.com/practice/course/arrays/ARRAYSPRO/problems/LEADERINARAY
-// Solved on: 2026-11-27T10:49:19.579Z
+// Solved on: 2026-11-27T10:50:41.822Z
 
 class Solution {
 public:
@@ -12,11 +12,11 @@ public:
         int n=nums.size();
         vector<int>temp(n,-1);
         for(int j=n-1;j>=0;j--){
-            while(!st.empty() && st.top()<nums[j] ){
+            while(!st.empty() && st.top()<=nums[j] ){
                 st.pop();
             }
             if(!st.empty()){
-                temp[j]=nums[j];
+                temp[j]=st.top();
             }
             st.push(nums[j]);
         }
@@ -25,7 +25,7 @@ public:
     vector<int> findLeaders(vector<int>& nums) {
         // write your code here
 
-        stack<int>st;
+       // stack<int>st;
         vector<int>temp=nge(nums);
         vector<int>ans;
         for(int i=0;i<temp.size();i++){
