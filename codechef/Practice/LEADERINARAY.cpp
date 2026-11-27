@@ -3,7 +3,7 @@
 // Language: C++​
 // Verdict: Accepted
 // URL: https://www.codechef.com/practice/course/arrays/ARRAYSPRO/problems/LEADERINARAY
-// Solved on: 2026-11-27T10:54:29.920Z
+// Solved on: 2026-11-27T10:58:25.684Z
 
 class Solution {
 public:
@@ -12,7 +12,7 @@ public:
         int n=nums.size();
         vector<int>temp(n,INT_MIN);
         for(int j=n-1;j>=0;j--){
-            while(!st.empty() && st.top()<=nums[j] ){
+            while(!st.empty() && st.top()<nums[j] ){
                 st.pop();
             }
             if(!st.empty()){
